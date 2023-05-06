@@ -1,0 +1,2019 @@
+@font-face {
+    font-family: 'Garamond';
+    font-weight: 400;
+    src: url('../fonts/CormorantGaramond/CormorantGaramond-Regular.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GaramondBold';
+    font-weight: 700;
+    src: url('../fonts/CormorantGaramond/CormorantGaramond-Bold.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saksonia';
+    font-weight: 400;
+    src: url('../fonts/Saksonia/saksonia.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saksonia';
+    font-weight: 400;
+    src: url('../fonts/Saksonia/saksonia.woff2') format('woff2');
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Garamond, sans-serif;
+    margin: 0;
+    /* background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FFFFFF 0.01%, #FBF7EE 100%); */
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.button {
+    font-family: 'Garamond';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #C89C6D;
+    border-radius: 30px;
+    padding: 12px 50px;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.button:hover {
+    background: #9e7b56;
+}
+
+/* header style start */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s linear;
+    z-index: 999;
+}
+    
+.header_active {
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FFFFFF 0.01%, #FBF7EE 100%);
+}
+
+.header_nav_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    padding-top: 20px;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_logo_img {
+    width: 100px;
+}
+
+.header_logo_img_text {
+    width: 160px;
+    margin-left: 14px;
+}
+
+.header_links {
+    display: flex;
+    gap: 40px;
+}
+
+.header_nav_link {
+    font-family: 'Garamond';
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: #693E16;
+    transition: .2s ease;
+}
+
+.header_nav_link:hover {
+    opacity: .7;
+}
+
+.header_burger {
+    width: 40px;
+    height: 22px;
+    position: relative;
+    display: none;
+    cursor: pointer;
+}
+
+.burger_line{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #693E16;
+    position: absolute;
+    left: 0;
+}
+
+.burger_line_first {
+    top: 0;
+}
+
+.burger_line_third {
+    bottom: 0;
+}
+
+.burger_line_second {
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* header style end */
+
+
+/* hero start */
+.hero {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(141, 78, 18, 0.1674) 0%, rgba(242, 231, 212, 0.0162) 100%);
+    padding-top: 180px;
+}
+
+.hero_content {
+    display: flex;
+    margin: 0 20px;
+}
+
+.hero_img {
+    width: 920px;
+    z-index: -2;
+}
+
+.header_content_text {
+    margin-top: 8%;
+    margin-left: -15%;
+}
+
+.header_content_title {
+    font-family: 'Saksonia';
+    font-weight: 400;
+    font-size: 68px;
+    color: #975C28;
+    margin-bottom: 0px;
+}
+
+.header_content_subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    color: #693E16;
+}
+
+.header_content_button {
+    margin-top: 40px;
+}
+
+.hero_service_wave {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    margin-top: -180px;
+}
+
+.hero_service_wave::after {
+    background-image: url(../images/hero-service-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -5%;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30vh;
+    z-index: 9;
+}
+/* hero end */
+
+
+/* service style start */ 
+.service {
+    padding-top: 20px;
+
+}
+
+.service_content {
+    margin-left: 140px;
+}
+
+.service_content_title {
+    font-family: 'Saksonia';
+    font-weight: 400;
+    font-size: 52px;
+    color: #975C28;
+}
+
+.service_content_list{
+    display: flex;
+}
+
+.service_content_list_left, .service_content_list_right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service_content_list_left {
+    margin: 0 150px;
+}
+
+.service_content_links {
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.service_content_links:hover {
+    text-decoration: underline #E3B776;
+}
+
+.service_content_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.service_footer_bg {
+    background-image: url(../images/service-massage-wave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+/* service style end */ 
+
+
+/* massage start */
+.massage {
+    padding-top: 100px;
+    position: relative;
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FFFFFF 0.01%, #FBF7EE 100%);
+}
+.massage_slider_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.massage_slider_content_left {
+    width: 500px;
+}
+
+.massage_content_title {
+    font-family: 'Saksonia';
+    font-weight: 400;
+    font-size: 52px;
+    color: #975C28;
+}
+
+.massage_title_text {
+    margin-left: 30px;
+}
+
+.massage_content_subtitle {
+    font-weight: 400;
+    font-size: 32px;
+    color: #975C28;
+}
+
+.massage_content_text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.massage_content_price {
+    font-family: 'GaramondBold';
+    font-weight: 700;
+    font-size: 52px;
+    color: #975C28;
+    margin-right: 40px;
+}
+
+.massage_content_old-price {
+    font-family: 'Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgba(151, 92, 40, 0.7);
+    text-decoration: line-through;
+}
+
+.massage_content_button {
+    margin-top: 20px;
+}
+
+.massage_slider_img {
+    width: 340px;
+    border-radius: 50%;
+}
+
+.massage_slider_content_images {
+    position: relative;
+    margin-left: 80px;
+}
+
+.massage_slider_img_circle {
+    width: 160px;
+    position: absolute;
+    bottom: 0;
+    left: -60px;
+}
+
+/* massage swiper */
+.massage_swiper {
+    overflow: hidden;
+}
+
+.massage_swiper_btn_prev, .massage_swiper_btn_next{
+    color: #693E16;
+    background: transparent;
+    border: none;
+}
+
+.massage_swiper_btn_prev {
+    margin-left: 40px;
+}
+
+.massage_swiper_btn_next {
+    margin-right: 40px;
+}
+/* massage swiper */
+/* massage end */
+
+
+/* about start */
+.about {
+    background: linear-gradient(171.66deg, rgba(255, 255, 255, 0.73) 7.06%, rgba(251, 247, 238, 0) 93.62%);
+    padding-bottom: 80px;
+}
+
+.about_bg {
+    background-image: url(../images/about-bgr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+.about_content {
+    padding-top: 20px;
+    margin-left: 140px;
+}
+
+.about_title {
+    font-family: 'Saksonia';
+    font-weight: 400;
+    font-size: 52px;
+    color: #975C28;
+    margin-bottom: 2px;
+}
+
+.about_content_sections {
+    display: flex;
+    align-items: center;
+}
+
+.about_content_section_left {
+    width: 500px;
+}
+
+.about_content_text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.about_img {
+    width: 650px;
+}
+
+.about_footer_text {
+    font-family: 'Saksonia';
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 54px;
+    color: #975C28;
+}
+
+.about_footer_text span {
+    padding-left: 80px;
+}
+/* about end */
+
+
+/* masters start */ 
+.masters {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(141, 78, 18, 0.1674) 0%, rgba(242, 231, 212, 0.0162) 100%);
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 60px;
+}
+
+.masters_title {
+    padding-top: 20px;
+    font-family: 'Saksonia';
+    font-weight: 400;
+    font-size: 52px;
+    text-align: center;
+    color: #975C28;
+    margin-bottom: 80px;
+}
+
+.masters_slider_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+}
+
+.masters_slider_card_img {
+    width: 220px;
+}
+
+.master_name {
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    color: #693E16;
+    margin: 10px auto 6px;
+}
+
+.masters_skill {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #693E16;
+}
+
+.masters_swiper {
+    overflow: hidden;
+}
+
+.masters_swiper_btn_prev, .masters_swiper_btn_next {
+    color: #693E16;
+    background: transparent;
+    border: none;
+    top: 400px;
+}
+
+.masters_swiper_btn_prev {
+    margin-left: 20px;
+}
+
+.masters_swiper_btn_next {
+    margin-right: 20px;
+}
+
+.section_bg {
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+.section_bg_img {
+    width: 500px;
+}
+/* masters end */ 
+
+
+/* cards start */
+.cards {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.cards_container {
+    overflow: hidden;
+    padding: 20px;
+}
+
+.card_content {
+    display: flex;
+    width: 300px;
+    height: 460px;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background: #FBF7EE;
+    box-shadow: 0px 6.00888px 22.5333px rgba(105, 62, 22, 0.29);
+}
+
+.card_content_img {
+    width: 90px;
+}
+
+.card_content_title {
+    font-family: 'GaramondBold', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #693E16;
+    width: 200px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.cards_content_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+}
+
+.card_content_list {
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 14px;
+} 
+
+.card_content_link {
+    font-weight: 400;
+    font-size: 20px;
+    color: #693E16;
+    text-decoration: none;
+    margin-top: 14px;
+}
+
+.cards_swiper_btn_prev, .cards_swiper_btn_next{
+    color: #693E16;
+    background: transparent;
+    border: none;
+}
+
+.cards_swiper_btn_prev {
+    margin-left: 20px;
+}
+
+.cards_swiper_btn_next {
+    margin-right: 20px;
+}
+
+.cards_footer_bg {
+    background-image: url(../images/service-massage-wave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+/* cards end */
+
+
+/* reviews start */
+.reviews {
+    position: relative;
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FFFFFF 0.01%, #FBF7EE 100%);
+}
+
+.reviews_title {
+    font-family: 'Saksonia';
+    font-weight: 400;
+    font-size: 52px;
+    color: #975C28;
+    margin-bottom: 60px;
+}
+
+.reviews_container {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.reviews_first_slide {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    gap: 30px;
+}
+
+.reviews_card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px 30px;
+    background: #FFFFFF;
+    box-shadow: 3.03766px 3.03766px 15.1883px rgba(105, 62, 22, 0.24);
+    border-radius: 20px;
+    cursor: default;
+    margin: 0 40px;
+}
+
+.reviews_card_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews_card_title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #975C28;
+    margin-bottom: 8px;
+}
+
+.reviews_card_header_left_content {
+    display: flex;
+    align-items: center;
+}
+
+.review_stars {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.review_user_name{
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+} 
+
+.review_icon {
+    width: 30px;
+}
+
+.review_user_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 8px;
+}
+/* reviews end */
+
+
+/* promotion start */
+.promotion {
+    padding-bottom: 120px;
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FFFFFF 0.01%, #FBF7EE 100%);
+}
+
+.promotion_content {
+    display: flex;
+    align-items: center;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(141, 78, 18, 0.4278) 0%, rgba(242, 231, 212, 0.0414) 100%);
+}
+
+.promotion_img {
+    width: 500px;
+    margin-bottom: 60px;
+}
+
+.promotion_right_section {
+    margin-left: 100px;
+}
+
+.promotion_right_section_title {
+    font-family: 'Saksonia';
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 58px;
+    color: #975C28;
+}
+
+.promotion_button {
+    width: 450px;
+    font-size: 32px;
+    margin: 18px 0;
+}
+
+.promotion_right_section_subtitle {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #693E16;
+}
+/* promotion end */
+
+.contacts_wave_img {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    margin-top: -440px;
+}
+
+.contacts_wave_img::after {
+    background-image: url(../images/contacts-section-wave-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 60vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+
+
+/* contacts start */
+.contacts {
+    margin-bottom: 60px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(141, 78, 18, 0.1674) 0%, rgba(242, 231, 212, 0.0162) 100%);
+}
+
+.contacts_title {
+    font-family: 'Saksonia';
+    font-weight: 400;
+    font-size: 56px;
+    color: #975C28;
+    margin-left: 60px;
+}
+
+.contacts_title span {
+    padding-left: 86px;
+}
+
+.contacts_content {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts_phone {
+    margin-top: 60px;
+    width: 350px;
+    height: 520px;
+}
+
+.contacts_right_phone_img {
+    width: 400px;
+}
+
+.contacts_content_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.contacts_content_container_mob {
+    display: none;
+}
+
+.contacts_container_title {
+    font-weight: 400;
+    font-size: 40px;
+    color: #975C28;
+    margin-bottom: 8px;
+    }
+
+.contacts_container_subtitle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    color: #975C28;
+    margin-bottom: 20px;
+}
+
+.contacts_container_links {
+    display: flex;
+    gap: 30px;
+}
+
+.contacts_container_img {
+    width: 60px;
+}
+
+.contacts_dowm_section {
+    margin-top: 120px;
+    margin-left: 60px;
+}
+
+.contacts_down_title {
+    font-family: 'Saksonia';
+    font-weight: 400;
+    font-size: 56px;
+    color: #975C28;
+}
+
+.contacts_nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.contacts_nav_list_holder {
+    display: flex;
+    align-items: center;
+}
+
+.contacts_nav_item_img {
+    width: 30px;
+    padding-right: 20px;
+}
+
+.contacts_nav_item {
+    font-weight: 400;
+    font-size: 28px;
+    color: #000000;
+}
+/* contacts end */
+
+
+/* footer start */
+.footer {
+    background-image: url(../images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+/* footer end */
+
+
+
+/* media */
+@media screen and (max-width: 1300px) {
+    .hero_img {
+        width: 850px;
+    }
+
+    .header_content_title {
+        font-size: 60px;
+    }
+    
+    .header_content_subtitle {
+        font-size: 20px;
+    }
+
+    .hero_content {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .service_content_links {
+        font-size: 20px;
+    }
+
+    .massage_content_text {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .masters_slider_card_img {
+        width: 200px;
+    }
+
+    .reviews_card {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .hero_img {
+        width: 800px;
+    }
+
+    .header_content_title {
+        font-size: 56px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .header_nav_link {
+        font-size: 18px;
+    }
+
+    .header_links {
+        gap: 30px;
+    }
+
+    .hero_img {
+        width: 750px;
+    }
+
+    .header_content_title {
+        font-size: 52px;
+    }
+
+    .header_content_subtitle {
+        font-size: 18px;
+    }
+
+    .about_content_text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .card_content {
+        width: 260px;
+        height: 400px;   
+    }
+    
+    .card_content_img {
+        width: 75px;
+    }
+    
+    .card_content_title {
+        font-size: 28px;
+    }
+    
+    .card_content_list {
+        font-size: 18px;
+    }
+
+    .promotion_img {
+        width: 450px;
+    }
+    
+    .promotion_right_section {
+        margin-left: 100px;
+    }
+    
+    .promotion_right_section_title {
+        font-size: 60px;
+        line-height: 48px;
+    }
+    
+    .promotion_button {
+        width: 400px;
+        font-size: 28px;
+    }
+    
+    .promotion_right_section_subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .contacts_title {
+        font-size: 50px;
+    }
+
+    .contacts_phone {
+        width: 300px;
+        height: 450px;
+    }
+    
+    .contacts_right_phone_img {
+        width: 320px;
+    }
+
+    .contacts_container_title {
+        font-size: 34px;
+        }
+    
+    .contacts_container_subtitle {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+    .contacts_container_img {
+        width: 50px;
+    }
+
+    .contacts_down_title {
+        font-size: 50px;
+    }
+    
+    .contacts_nav_list {
+        gap: 15px;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+
+    .contacts_nav_item_img {
+        width: 25px;
+    }
+    
+    .contacts_nav_item {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header_logo_img {
+        width: 80px;
+    }
+    
+    .header_logo_img_text {
+        width: 140px;
+    }
+
+    .header_links {
+        gap: 20px;
+    }
+
+    .hero_img {
+        width: 680px;
+    }
+
+    .header_content_title {
+        font-size: 46px;
+    }
+
+    .button {
+        font-size: 16px;
+        text-align: center;
+        padding: 12px 40px;
+    }
+
+    .service_content_list_left {
+        margin: 0 60px;
+    }
+    
+    .service_content_links {
+        font-size: 20px;
+    }
+
+    .service_content_list_left, .service_content_list_right {
+        gap: 15px;
+    }
+
+    .hero_service_wave::after {
+        left: -20%;
+    }
+
+    .massage_slider_content_left {
+        width: 500px;
+    }
+    
+    .massage_content_title {
+        font-size: 46px;
+    }
+    
+    .massage_title_text {
+        margin-left: 50px;
+    }
+    
+    .massage_content_subtitle {
+        font-size: 28px;
+    }
+    
+    .massage_content_text {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    
+    .massage_content_price {
+        font-size: 48px;
+        margin-right: 40px;
+    }
+    
+    .massage_content_old-price {
+        font-size: 36px;
+    }
+    
+    .massage_slider_img {
+        width: 300px;
+    }
+    
+    .massage_slider_content_images {
+        margin-left: 80px;
+    }
+    
+    .massage_slider_img_circle {
+        width: 130px;
+        left: -20px;
+    }
+
+    .massage_swiper_btn_prev {
+        margin-left: 0px;
+    }
+    
+    .massage_swiper_btn_next {
+        margin-right: 0px;
+    }
+
+    .about_content {
+        padding-top: 20px;
+        margin-left: 140px;
+    }
+    
+    .about_title {
+        font-size: 48px;
+    }
+    
+    .about_content_section_left {
+        width: 400px;
+    }
+    
+    .about_content_text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    .about_img {
+        width: 550px;
+    }
+    
+    .about_footer_text {
+        font-size: 40px;
+        line-height: 42px;
+    }
+
+    .masters_title {
+        font-size: 48px;
+        margin-bottom: 60px;
+    }
+    
+    .masters_slider_card {
+        width: 200px;
+    }
+    
+    .masters_slider_card_img {
+        width: 200px;
+    }
+    
+    .master_name {
+        font-size: 20px;
+    }
+    
+    .masters_skill {
+        font-size: 16px;
+    }
+    
+    .masters_swiper_btn_prev, .masters_swiper_btn_next {
+        top: 380px;
+    }
+    
+    .masters_swiper_btn_prev {
+        margin-left: 0px;
+    }
+    
+    .masters_swiper_btn_next {
+        margin-right: 0px;
+    }
+
+    .section_bg_img {
+        width: 400px;
+    }
+
+    .card_content {
+        width: 260px;
+        height: 400px;
+        padding: 20px;
+    }
+    
+    .card_content_img {
+        width: 75px;
+    }
+    
+    .card_content_title {
+        font-size: 28px;
+        width: 160px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+    
+    .cards_content_list {
+        width: 200px;
+        height: 180px;
+    }
+    
+    .card_content_list {
+        font-size: 18px;
+        margin-bottom: 14px;
+    } 
+    
+    .card_content_link {
+        margin-top: 10px;
+    }
+    
+    .cards_swiper_btn_prev {
+        margin-left: 0px;
+    }
+    
+    .cards_swiper_btn_next {
+        margin-right: 0px;
+    }
+
+    .reviews_title {
+        font-size: 48px;
+        margin-left: 100px;
+    }
+    
+    .reviews_first_slide {
+        width: 350px;
+        gap: 30px;
+    }
+    
+    .reviews_card {
+        width: 260px;
+        padding: 15px 20px;
+    }
+    
+    .reviews_card_title {
+        font-size: 20px;
+    }
+    
+    .review_stars {
+        width: 80px;
+        margin-right: 10px;
+    }
+    
+    .review_user_name{
+        font-size: 16px;
+    } 
+    
+    .review_icon {
+        width: 20px;
+    }
+    
+    .review_user_text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .promotion_img {
+        width: 400px;
+    }
+    
+    .promotion_right_section {
+        margin-left: 50px;
+    }
+    
+    .promotion_right_section_title {
+        font-size: 60px;
+        line-height: 50px;
+    }
+    
+    .promotion_button {
+        width: 360px;
+        font-size: 26px;
+        margin: 18px 0;
+    }
+    
+    .promotion_right_section_subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .contacts_title {
+        font-size: 48px;
+        margin-left: 80px;
+    }
+    
+    .contacts_title span {
+        padding-left: 100px;
+    }
+    
+    .contacts_phone {
+        margin-top: 60px;
+        width: 250px;
+        height: 400px;
+    }
+    
+    .contacts_right_phone_img {
+        width: 300px;
+    }
+    
+    .contacts_container_title {
+        font-size: 34px;
+        }
+    
+    .contacts_container_subtitle {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .contacts_container_img {
+        width: 50px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header_burger {
+        display: block;
+    }
+
+    .header_nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FFFFFF 0.01%, #FBF7EE 100%);
+        z-index: 10;
+        padding: 75px;
+        transform: translateY(-100%);
+        transition: .2s all linear;
+    }
+
+    .header_nav_active{
+        transform: translateY(0);
+
+    }
+
+    .header_nav-close {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 26px;
+        left: 78%;
+        z-index: 9;
+        cursor: pointer;
+    }
+
+    .header_nav-close-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #693E16;
+        position: absolute;
+        top: 50%;
+    }
+
+    .header_nav-close-line:first-child{
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header_nav-close-line:last-child{
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .header_links {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 60px;
+    }
+    
+    .header_nav_link {
+        font-size: 28px;
+    }
+
+    .header_nav_content {
+        padding: 10px;
+    }
+
+    .hero {
+        padding-top: 100px;
+    }
+    
+    .hero_content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .header_content_text {
+        margin-top: 40px;
+        margin-left: 0;
+        margin-bottom: 60px;
+    }
+
+    .header_content_title {
+        font-size: 56px;
+    }
+
+    .header_content_subtitle {
+        font-size: 22px;
+    }
+
+    .hero_service_wave {
+        margin-top: -300px;
+    }
+    
+    .hero_service_wave::after {
+        left: -20%;
+    }
+
+    .service_content {
+        margin-left: 40px;
+    }
+
+    .massage_slider_content_left {
+        width: 350px;
+        margin-left: 20px;
+    }
+    
+    .massage_content_title {
+        font-size: 40px;
+    }
+    
+    .massage_title_text {
+        margin-left: 20px;
+    }
+    
+    .massage_content_subtitle {
+        font-size: 20px;
+    }
+    
+    .massage_content_text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .massage_content_price {
+        font-size: 40px;
+        margin-right: 20px;
+    }
+    
+    .massage_content_old-price {
+        font-size: 32px;
+    }
+    
+    .massage_slider_img {
+        width: 250px;
+    }
+    
+    .massage_slider_content_images {
+        margin-left: 60px;
+    }
+    
+    .massage_slider_img_circle {
+        width: 110px;
+        left: -30px;
+    }
+
+    .about_content_sections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_content {
+        padding-top: 20px;
+        margin-left: 40px;
+    }
+
+    .about_footer_text {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    
+    .about_footer_text span {
+        padding-left: 80px;
+    }
+
+    .masters_slider_card {
+        width: 180px;
+    }
+    
+    .masters_slider_card_img {
+        width: 180px;
+    }
+    
+    .master_name {
+        font-size: 18px;
+    }
+    
+    .masters_skill {
+        font-size: 14px;
+    }
+
+    .masters_swiper {
+        margin: 0 60px;
+    }
+
+    .cards_container {
+        padding: 20px 50px;
+    }
+
+    .reviews_container {
+        padding: 20px 40px;
+    }
+
+    .promotion_img {
+        width: 380px;
+    }
+    
+    .promotion_right_section {
+        margin-left: 30px;
+    }
+
+    .promotion_right_section_title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    
+    .promotion_button {
+        width: 280px;
+        font-size: 22px;
+        margin: 14px 0;
+    }
+    
+    .promotion_right_section_subtitle {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .promotion {
+        padding-bottom: 20px;
+    }
+
+    .contacts_wave_img {
+        height: 35vh;
+        margin-top: -260px;
+    }
+    
+    .contacts_wave_img::after {
+        height: 35vh;
+    }
+
+    .contacts_phone {
+        margin-top: 60px;
+        width: 200px;
+        height: 320px;
+    }
+    
+    .contacts_right_phone_img {
+        width: 250px;
+    }
+    
+    .contacts_container_title {
+        font-size: 28px;
+        }
+    
+    .contacts_container_subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .contacts_container_img {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .hero_service_wave {
+        margin-top: -260px;
+    }
+
+    .reviews_container {
+        padding: 20px 30px;
+    }
+
+    .massage_slider_img {
+        width: 220px;
+    }
+    
+    .massage_slider_img_circle {
+        width: 100px;
+    }
+
+    .massage_slider_content_left {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header_nav-close {
+        top: 34px;
+        left: 72%;
+    }
+
+    .header_content_title {
+        font-size: 46px;
+    }
+
+    .header_content_subtitle {
+        font-size: 18px;
+    }
+
+    .hero_img {
+        width: 580px;
+    }
+    
+    .service_content_links {
+        font-size: 18px;
+    }
+
+    .massage {
+        padding-top: 60px;
+    }
+
+    .massage_slider_content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .about_footer_text {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    
+    .about_footer_text span {
+        padding-left: 60px;
+    }
+
+    .about_img {
+        width: 450px;
+    }
+
+    .cards_container {
+        padding: 20px 120px;
+    }
+
+    .reviews_container {
+        padding: 20px 0px;
+    }
+
+    .promotion_content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+        padding-top: 20px;
+    }
+
+    .contacts_title {
+        font-size: 46px;
+        margin-left: 20px;
+    }
+    
+    .contacts_title span {
+        padding-left: 40px;
+    }
+
+    .contacts_phone {
+        margin-top: 60px;
+        width: 140px;
+        height: 270px;
+    }
+    
+    .contacts_right_phone_img {
+        width: 180px;
+    }
+    
+    .contacts_container_title {
+        font-size: 22px;
+    }
+    
+    .contacts_container_subtitle {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .contacts_container_img {
+        width: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .button {
+        width: 100%;
+    }
+
+    .header_nav-close {
+        top: 34px;
+        left: 68%;
+    }
+
+    .hero_img {
+        width: 450px;
+    }
+
+    .hero_service_wave {
+        margin-top: -220px;
+    }
+    
+    .hero_service_wave::after {
+        left: -20%;
+    }
+
+    .header_content_title {
+        font-size: 42px;
+    }
+
+    .header_content_subtitle {
+        font-size: 16px;
+    }
+
+    .service_content {
+        margin-left: 10px;
+    }
+
+    .service_content_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        margin-left: 40px;
+    }
+
+    .service_content_list_left {
+        margin: 0px;
+    }
+
+    .service_content_button {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        width: 70%;
+    }
+
+    .about_content {
+        margin-left: 10px;
+    }
+
+    .masters_slider_card {
+        width: 150px;
+    }
+    
+    .masters_slider_card_img {
+        width: 150px;
+    }
+
+    .section_bg {
+        margin-top: 200px;
+        margin-left: 40px;
+    }
+    
+    .section_bg_img {
+        width: 300px;
+    }
+
+    .cards_container {
+        padding: 20px 50px;
+    }
+
+    .reviews_title {
+        font-size: 48px;
+        margin-left: 100px;
+    }
+    
+    .reviews_first_slide {
+        width: 300px;
+        gap: 20px;
+    }
+
+    .reviews_container {
+        padding: 20px 40px;
+    }
+
+    .contacts_title {
+        font-size: 36px;
+        margin-left: 20px;
+    }
+    
+    .contacts_title span {
+        padding-left: 36px;
+    }
+    
+    .contacts_phone {
+        display: none;
+    }
+    
+    .contacts_right_phone_img {
+        display: none;
+    }
+
+    .contacts_content_container_mob {
+        display: flex;
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .contacts_phone_mob {
+        width: 120px;
+        height: 220px;
+    }
+
+    .contacts_right_phone_mob {
+        width: 180px;
+    }
+
+    .contacts_dowm_section {
+        margin-left: 20px;
+    }
+    
+    .contacts_down_title {
+        font-size: 42px;
+    }
+    
+    .contacts_nav_list {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    
+    .contacts_nav_item_img {
+        width: 30px;
+        padding-right: 20px;
+    }
+    
+    .contacts_nav_item {
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .header_nav-close {
+        top: 34px;
+        left: 63%;
+    }
+
+    .header_links {
+        margin-left: 20px;
+    }
+    
+    .hero_img {
+        width: 400px;
+    }
+
+    .massage {
+        padding-top: 20px;
+    }
+
+    .about_content {
+        padding-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .about_title {
+        font-size: 42px;
+    }
+    
+    .about_content_section_left {
+        width: auto;
+    }
+    
+    .about_content_text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .about_img {
+        width: 380px;
+    }
+
+    .about_footer_text {
+        font-size: 26px;
+        line-height: 34px;
+        margin-top: 20px;
+    }
+    
+    .about_footer_text span {
+        padding-left: 20px;
+    }
+
+    .masters_swiper {
+        padding: 0 50px;
+    }
+
+    .promotion_img {
+        width: 350px;
+    }
+
+    .reviews_title {
+        font-size: 42px;
+        margin-left: 20px;
+    }
+
+    .reviews_container {
+        padding: 20px;
+    }
+
+    .contacts_content_container_mob {
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .contacts_phone_mob {
+        width: 100px;
+        height: 180px;
+    }
+
+    .contacts_right_phone_mob {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .header_nav-close {
+        top: 34px;
+        left: 62%;
+    }
+
+    .header_logo_img {
+        width: 65px;
+    }
+    
+    .header_logo_img_text {
+        width: 120px;
+        margin-left: 14px;
+    }
+
+    .header_content_title {
+        font-size: 38px;
+    }
+
+    .header_content_subtitle {
+        font-size: 14px;
+    }
+
+    .hero_img {
+        width: 350px;
+    }
+
+    .service_content_list {
+        margin-left: 20px;
+    }
+
+    .massage_slider_img {
+        width: 200px;
+    }
+    
+    .massage_slider_content_images {
+        margin-left: 60px;
+    }
+    
+    .massage_slider_img_circle {
+        width: 90px;
+        left: -30px;
+    }
+
+    .massage_content_title {
+        font-size: 36px;
+    }
+
+    .about_img {
+        width: 350px;
+    }
+
+    .about_footer_text {
+        font-size: 26px;
+        line-height: 34px;
+        margin-top: 20px;
+    }
+    
+    .about_footer_text span {
+        padding-left: 20px;
+    }
+
+    .masters_swiper {
+        padding: 0 40px;
+    }
+
+    .cards_container {
+        padding: 20px 60px;
+    }
+
+    .card_content {
+        width: 220px;
+        height: 380px;
+        padding: 15px;
+    }
+
+    .contacts_nav_item_img {
+        width: 15px;
+        padding-right: 20px;
+    }
+    
+    .contacts_nav_item {
+        font-size: 18px;
+    }
+
+    .contacts_nav_list {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .contacts_dowm_section {
+        margin-left: 10px;
+    }
+
+}
